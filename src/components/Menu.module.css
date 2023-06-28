@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 55px;
+}
+
+.link {
+    padding: 10px 0;
+    font-size: 18px;
+}

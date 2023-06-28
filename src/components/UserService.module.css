@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.link {
+    padding: 9px 10px;
+    font-size: 14px;
+}
+
+.borderedLink {
+    padding: 9px 10px;
+    font-size: 14px;
+    border: 1px solid #FAD648;
+}

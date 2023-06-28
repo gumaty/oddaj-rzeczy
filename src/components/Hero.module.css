@@ -1,0 +1,16 @@
+.container {
+    max-width: 1900px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.hero--image {
+    max-width: 855px;
+    width: 46vw;
+    height: 100%;
+    background-image: url("../assets/Home-Hero-Image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
