@@ -6,7 +6,7 @@ import Button from "@/components/Button";
 function SimpleSteps() {
     return (
         <div className={styles.container}>
-            <Header text={"Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce"}/>
+            <Header text={"Wystarczą 4 proste kroki"}/>
             <SimpleStepsInner />
             <Button text={"Oddaj rzeczy"}/>
         </div>

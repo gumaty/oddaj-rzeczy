@@ -1,0 +1,14 @@
+.imageContainer {
+    position: relative;
+    max-width: 900px;
+    width:100%;
+    overflow: hidden;
+}
+
+.aboutImage {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    transform: translateX(50px);
+}

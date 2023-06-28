@@ -7,7 +7,10 @@ import ButtonsContainer from "@/components/ButtonsContainer";
 function Hero() {
     return (
         <div className={styles.container}>
-            <div>
+            <div className={styles.imageContainer}>
+                <img src={"../assets/home-hero-image.jpg"} className={styles.heroImage}/>
+            </div>
+            <div className={styles.inner}>
                 <UserService />
                 <Menu />
                 <MainContent />
