@@ -11,7 +11,6 @@ function Hero() {
                 <UserService />
                 <Menu />
                 <MainContent />
-
             </div>
 
 
