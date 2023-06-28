@@ -29,7 +29,7 @@ function InfoContainer() {
     return (
         <div className={styles.container}>
             {infos.map(info => (
-                <Info info={info}/>
+                <Info key={info.id} info={info}/>
             ))}
         </div>
     )

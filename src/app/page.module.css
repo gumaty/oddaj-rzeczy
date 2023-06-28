@@ -1,8 +1,10 @@
 .main {
+  max-width: 1900px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  margin-inline: auto;
   padding: 1rem;
   min-height: 100vh;
 }

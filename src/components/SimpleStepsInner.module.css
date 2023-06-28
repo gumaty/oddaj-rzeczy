@@ -1,0 +1,12 @@
+.container {
+    margin-top: 55px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    max-width: 1900px;
+    width:100%;
+    background-color: #F0F1F1;
+}

@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 1900px;
     width: 100%;
     background-image: url("../assets/3-columns-background.png");
     background-size: cover;
