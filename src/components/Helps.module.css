@@ -1,0 +1,18 @@
+.container {
+    max-width: 1350px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-inline: auto;
+    margin-top: 70px;
+}
+
+.lead {
+    margin: 70px auto;
+    max-width: 640px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
