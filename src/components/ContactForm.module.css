@@ -3,5 +3,67 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 100%;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap:20px;
+    margin-top: 70px;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputControl label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputControl input {
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #707070;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.textareaControl {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.textareaControl label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.textareaControl textarea {
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #707070;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.buttonControl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.buttonControl button {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
 }
