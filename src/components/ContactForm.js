@@ -2,7 +2,7 @@ import styles from "./ContactForm.module.css";
 function ContactForm() {
 
     return (
-        <form>
+        <form className={styles.container}>
             <div className={styles.inputsContainer}>
                 <div className={styles.inputControl}>
                     <label>Wpisz swoje imię</label>
