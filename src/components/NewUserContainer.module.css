@@ -1,0 +1,25 @@
+.container {
+    position: absolute;
+    top: calc(50% - 250px);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 500px;
+    height: 595px;
+}
+
+.newUser {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 50px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+}

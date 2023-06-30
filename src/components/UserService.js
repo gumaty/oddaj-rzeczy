@@ -4,8 +4,8 @@ import styles from "./UserService.module.css";
 function UserService() {
     return (
         <div className={styles.wrapper}>
-            <Link href={'/'} className={styles.link}>Zaloguj</Link>
-            <Link href={'/'} className={styles.borderedLink}>Załóż konto</Link>
+            <Link href={'/login'} className={styles.link}>Zaloguj</Link>
+            <Link href={'/newuser'} className={styles.borderedLink}>Załóż konto</Link>
         </div>
     )
 }

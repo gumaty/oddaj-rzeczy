@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 385px;
+    height: 235px;
+    background-color: #F0F1F1;
+    margin-top: 60px;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.inputControl label {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.inputControl input {
+    padding: 10px;
+    border: 0;
+    border-bottom: 1px solid #707070;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #F0F1F1;
+}
+
+.buttonControl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.buttonControl button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: transparent;
+}
