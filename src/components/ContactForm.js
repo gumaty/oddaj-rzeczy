@@ -45,8 +45,8 @@ function ContactForm() {
 
                 if (!values.message) {
                     errors.message = 'Required';
-                } else if (values.message.length < 10){
-                    errors.message = 'Wiadomość musi mieć conajmniej 10 znaków';
+                } else if (values.message.length < 120){
+                    errors.message = 'Wiadomość musi mieć conajmniej 120 znaków';
                 }
 
                 status = errors.length;
