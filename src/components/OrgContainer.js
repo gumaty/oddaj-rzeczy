@@ -1,6 +1,6 @@
 import styles from "./OrgContainer.module.css";
 import OrgDetails from "@/components/OrgDetails";
-function OrgContainer() {
+function OrgContainer(props) {
 
     const funds = [
         {
@@ -23,11 +23,51 @@ function OrgContainer() {
         }
     ]
 
+    const orgs = [
+        {
+            id: 1,
+            name: "Lorem Ipsum 1",
+            mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            stuff: "Egestas, sed, tempus"
+        },
+        {
+            id: 2,
+            name: "Lorem Ipsum 2",
+            mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            stuff: "Ut, aliquam, purus, sit, amet"
+        },
+        {
+            id: 3,
+            name: "Lorem Ipsum 3",
+            mission: "Scelerisque in dictum non consectetur a erat nam.",
+            stuff: "Mi, quis, hendrerit, dolor"
+        }
+    ]
+
+    const local = [
+        {
+            id: 1,
+            name: "Lorem Ipsum 1",
+            mission: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+            stuff: "Egestas, sed, tempus"
+        },
+        {
+            id: 2,
+            name: "Lorem Ipsum 2",
+            mission: "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+            stuff: "Ut, aliquam, purus, sit, amet"
+        },
+        {
+            id: 3,
+            name: "Lorem Ipsum 3",
+            mission: "Scelerisque in dictum non consectetur a erat nam.",
+            stuff: "Mi, quis, hendrerit, dolor"
+        }
+    ]
+
     return (
         <div className={styles.container}>
-            {funds.map(fund => (
-                <OrgDetails key={fund.id} fund={fund}/>
-            ))}
+            {props.type === 'funds' ? (funds.map(fund => ( <OrgDetails key={fund.id} type={props.type} fund={fund}/> ))) : props.type === 'orgs' ? (orgs.map(fund => ( <OrgDetails key={fund.id} type={props.type} fund={fund}/> ))) : props.type === 'local' ? (local.map(fund => ( <OrgDetails key={fund.id} type={props.type} fund={fund}/> ))): ""}
         </div>
     )
 }

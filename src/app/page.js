@@ -13,7 +13,7 @@ export default function Home() {
         <InfoContainer />
         <SimpleSteps />
         <About />
-        <Helps />
+        <Helps type={'funds'}/>
         <Contact />
     </main>
   )

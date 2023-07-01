@@ -1,12 +1,14 @@
 import HelpsButton from "@/components/HelpsButton";
 import styles from "./HelpsButtons.module.css";
+import OrgDetails from "@/components/OrgDetails";
+import SelectedButton from "@/components/SelectedButton";
 
-function HelpsButtons() {
+function HelpsButtons(props) {
     return (
         <div className={styles.container}>
-            <HelpsButton text={"Fundacjom"}/>
-            <HelpsButton text={"Organizacjom pozarządowym"}/>
-            <HelpsButton text={"Lokalnym zbiórkom"}/>
+            {props.type === 'funds' ? <SelectedButton link={'/'} text={"Fundacjom"}/> : <HelpsButton link={'/'} text={"Fundacjom"}/>}
+            {props.type === 'orgs' ? <SelectedButton link={'/orgs'} text={"Organizacjom pozarządowym"}/> : <HelpsButton link={'/orgs'} text={"Organizacjom pozarządowym"}/>}
+            {props.type === 'local' ? <SelectedButton link={'/local'} text={"Lokalnym zbiórkom"}/> : <HelpsButton link={'/local'} text={"Lokalnym zbiórkom"}/>}
         </div>
     )
 }

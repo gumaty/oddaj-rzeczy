@@ -4,7 +4,7 @@ import Link from "next/link";
 function HelpsButton(props) {
     return (
         <div className={styles.container}>
-            <Link href={"/"} className={styles.text}>{props.text}</Link>
+            <Link href={props.link} className={styles.text}>{props.text}</Link>
         </div>
     )
 }
