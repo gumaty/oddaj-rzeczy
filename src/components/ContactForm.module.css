@@ -5,6 +5,25 @@
     width: 100%;
 }
 
+.successContainer {
+    align-self: center;
+    color: green;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    width: 350px;
+    margin-top: 20px;
+}
+
+.error {
+    align-self: flex-start;
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
 .inputsContainer {
     display: flex;
     flex-direction: row;
