@@ -1,16 +1,20 @@
+'use client'
+
 import styles from "@/components/LoginForm.module.css";
 
-function LoginForm() {
+function LoginForm(props) {
+
     return (
-        <form className={styles.container}>
+        
+        <form onSubmit={props.handleSubmit} className={styles.container}>
             <div className={styles.inputsContainer}>
                 <div className={styles.inputControl}>
                     <label>Email</label>
-                    <input type="text"/>
+                    <input type="email" onChange={e=> props.setEmail(e.target.value)}/>
                 </div>
                 <div className={styles.inputControl}>
                     <label>Hasło</label>
-                    <input type="password"/>
+                    <input type="password" onChange={e=> props.setPassword(e.target.value)}/>
                 </div>
             </div>
             <div className={styles.buttonControl}>
