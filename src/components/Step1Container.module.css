@@ -1,0 +1,8 @@
+.container {
+    max-width: 1900px;
+    width: 100%;
+    background-image: url("../assets/background-form.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 140px;
+}

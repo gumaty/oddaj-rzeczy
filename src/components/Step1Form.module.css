@@ -1,0 +1,56 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.labelText {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.step {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.button {
+    font-size: 24px;
+    font-weight: 300;
+    color: #000000;
+    margin-top: 160px;
+    padding: 25px 65px;
+}
+
+.input {
+    height: 40px;
+    width: 40px;
+    background-color: #FAD648;
+    border: 1px solid #3C3C3C;
+}
+
+.input:checked {
+    appearance: none;
+}
