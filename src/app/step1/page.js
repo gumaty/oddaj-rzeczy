@@ -1,5 +1,5 @@
-import styles from './page.module.css'
-import Hero from "@/components/Hero";
+import styles from '@/app/page.module.css';
+import HeroSteps from "@/components/HeroSteps";
 import InfoContainer from "@/components/InfoContainer";
 import SimpleSteps from "@/components/SimpleSteps";
 import About from "@/components/About";
@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main className={styles.main}>
-        <Hero id="start"/>
+        <HeroSteps id="start"/>
         <InfoContainer />
         <SimpleSteps id="happen"/>
         <About id="about"/>

@@ -1,16 +1,16 @@
-import styles from "./Hero.module.css";
-import MainContent from "@/components/MainContent";
+import styles from "./HeroSteps.module.css";
+import StepsContent from "@/components/StepsContent";
 import MainHeader from "@/components/MainHeader";
 
-function Hero() {
+function HeroSteps() {
     return (
         <div id="start" className={styles.container}>
             <div className={styles.imageContainer}>
-                <img src={"../assets/home-hero-image.jpg"} className={styles.heroImage}/>
+                <img src={"../assets/form-hero-image.jpg"} className={styles.heroImage}/>
             </div>
             <div className={styles.inner}>
                 <MainHeader />
-                <MainContent />
+                <StepsContent />
             </div>
 
 
@@ -19,4 +19,4 @@ function Hero() {
     )
 
 }
-export default Hero;
+export default HeroSteps;

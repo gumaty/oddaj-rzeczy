@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import ImageContainer from "@/components/ImageContainer";
 function About() {
     return (
-        <div  className={styles.container}>
+        <div  className={styles.container} id="about">
             <div className={styles.inner}>
                 <Header text={"O nas"}/>
                 <p className={styles.textDescription}>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
