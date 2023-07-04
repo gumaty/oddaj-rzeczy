@@ -8,10 +8,10 @@ function Step1Form() {
     const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
     return (
-        <div>
+        <div  className={styles.container}>
             <p className={styles.step}>Krok 1/4</p>
             <h3 className={styles.header}>Zaznacz co chcesz oddać:</h3>
-            <Formik
+            <Formik  className={styles.container}
                 initialValues={{
                     toggle: false,
                     checked: [],
@@ -22,7 +22,7 @@ function Step1Form() {
                 }}
             >
                 {({ values }) => (
-                    <Form>
+                    <Form  className={styles.formContainer}>
                         <div className={styles.inputsContainer} role="group" aria-labelledby="checkbox-group">
                             <label className={styles.labelText}>
                                 <Field className={styles.input} type="checkbox" name="checked" value="cloths" />
