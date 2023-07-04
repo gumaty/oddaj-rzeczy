@@ -8,7 +8,7 @@ function SimpleSteps() {
         <div className={styles.container} id="happen">
             <Header text={"Wystarczą 4 proste kroki"}/>
             <SimpleStepsInner />
-            <Button text={"Oddaj rzeczy"}/>
+            <Button text={"Oddaj rzeczy"} link={"/step1"}/>
         </div>
     )
 }

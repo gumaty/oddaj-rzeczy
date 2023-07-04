@@ -4,8 +4,8 @@ import Button from "@/components/Button";
 function ButtonsContainer() {
     return (
         <div className={styles.container}>
-            <Button text={"Oddaj rzeczy"}/>
-            <Button text={"Zorganizuj zbiórkę"}/>
+            <Button text={"Oddaj rzeczy"} link={"/step1"}/>
+            <Button text={"Zorganizuj zbiórkę"} link={"/"}/>
         </div>
     )
 }

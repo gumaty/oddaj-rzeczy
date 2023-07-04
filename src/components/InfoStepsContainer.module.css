@@ -1,0 +1,15 @@
+.container {
+    padding: 50px 140px;
+    max-width: 1900px;
+    width: 100%;
+    background-color: #FAD648;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: 600;
+}
+.text {
+    font-size: 22px;
+    font-weight: 400;
+}
