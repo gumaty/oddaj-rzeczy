@@ -30,7 +30,7 @@ function Step5Container() {
                             <p className={styles.textField} >90-209</p>
                         </div>
                         <div className={styles.inputsContainer}>
-                            <p className={styles.labelText} >Numer telefonuy</p>
+                            <p className={styles.labelText} >Numer telefonu</p>
                             <p className={styles.textField} >473 839 483</p>
                         </div>
                     </div>
