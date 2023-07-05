@@ -2,7 +2,6 @@
 
 import styles from "./Step4Form.module.css";
 import { Formik, Field, Form } from 'formik';
-import {useRouter} from "next/router";
 
 function Step4Form() {
 
@@ -64,7 +63,7 @@ function Step4Form() {
                                 </div>
                                 <div className={styles.textFieldContainer}>
                                     <label htmlFor="remarks" className={styles.labelText}>Uwagi do kuriera</label>
-                                    <textarea id="remarks" type="text" name="remarks" className={styles.textField} rows={4} />
+                                    <textarea id="remarks" type="text" name="remarks" className={styles.textField} rows={4} ></textarea>
                                 </div>
                             </div>
                         </div>
