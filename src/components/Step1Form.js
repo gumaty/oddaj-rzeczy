@@ -13,7 +13,6 @@ function Step1Form() {
             <h3 className={styles.header}>Zaznacz co chcesz oddać:</h3>
             <Formik  className={styles.container}
                 initialValues={{
-                    toggle: false,
                     checked: [],
                 }}
                 onSubmit={async (values) => {
@@ -22,7 +21,7 @@ function Step1Form() {
                 }}
             >
                 {({ values }) => (
-                    <Form  className={styles.formContainer}>
+                    <Form  className={styles.formContainer} >
                         <div className={styles.inputsContainer} role="group" aria-labelledby="checkbox-group">
                             <label className={styles.labelText}>
                                 <Field className={styles.input} type="checkbox" name="checked" value="cloths" />
