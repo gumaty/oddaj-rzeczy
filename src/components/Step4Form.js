@@ -16,7 +16,11 @@ function Step4Form() {
                 initialValues={{
                     street: '',
                     city: '',
-                    name: '',
+                    zipcode: '',
+                    phone: '',
+                    date: '',
+                    time: '',
+                    remarks: '',
                 }}
 
                 onSubmit={async values => {

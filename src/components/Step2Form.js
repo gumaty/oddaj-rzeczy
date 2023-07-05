@@ -14,7 +14,7 @@ function Step2Form() {
             <h3 className={styles.header}>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h3>
             <Formik className={styles.container}
                 initialValues={{
-                    location: [],
+                    bags: '',
                 }}
 
                 onSubmit={async values => {
