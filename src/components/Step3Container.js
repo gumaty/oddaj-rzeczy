@@ -1,6 +1,6 @@
 import styles from "./Step3Container.module.css";
 import Step3Form from "@/components/Step3Form";
-function Step2Container() {
+function Step3Container() {
     return (
         <div className={styles.container}>
             <Step3Form />
@@ -8,4 +8,4 @@ function Step2Container() {
     )
 }
 
-export default Step2Container;
+export default Step3Container;

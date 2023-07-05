@@ -4,7 +4,7 @@ import MainHeader from "@/components/MainHeader";
 
 function Hero() {
     return (
-        <div id="start" className={styles.container}>
+        <div className={styles.container}>
             <div className={styles.imageContainer}>
                 <img src={"../assets/home-hero-image.jpg"} className={styles.heroImage}/>
             </div>
@@ -12,10 +12,7 @@ function Hero() {
                 <MainHeader />
                 <MainContent />
             </div>
-
-
         </div>
-
     )
 
 }

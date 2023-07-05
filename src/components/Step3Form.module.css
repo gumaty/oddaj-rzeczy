@@ -17,6 +17,7 @@
     height: 40px;
     padding: 5px 5px 4px 5px;
     font-size: 24px;
+    background-color: #ececea;
 }
 
 .inputsContainer {
@@ -70,6 +71,7 @@
     font-size: 24px;
     font-weight: 300;
     border: 1px solid #3C3C3C;
+    background-color: #ececea;
 }
 
 .input:checked {
@@ -84,10 +86,10 @@
     display: inline-block;
     height: 50px;
     text-align: center;
-    border: 1px solid #ddd;
     line-height: 50px;
     padding: 0 20px;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 /*#kids:checked + .selectLabel,*/
