@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "./Step3Form.module.css";
+import styles from "./Step4Form.module.css";
 import { Formik, Field, Form } from 'formik';
 import {useRouter} from "next/router";
 
@@ -14,8 +14,8 @@ function Step4Form() {
             <h3 className={styles.header}>Podaj adres oraz termin odbioru rzecz przez kuriera:</h3>
             <Formik className={styles.container}
                 initialValues={{
-                    location: [],
-                    forWhom: '',
+                    street: '',
+                    city: '',
                     name: '',
                 }}
 
@@ -28,38 +28,40 @@ function Step4Form() {
                 {({ isSubmitting, getFieldProps, handleChange, handleBlur, values }) => (
 
                     <Form className={styles.formContainer}>
-                        <div>
-                            <h3 className={styles.sectionHeader}>Adres odbioru</h3>
+                        <div className={styles.boxesContainer}>
                             <div>
-                                <label htmlFor="street" className={styles.selectLabel}>Ulica</label>
-                                <Field id="street" type="text" name="street" className={styles.textField} />
+                                <h3 className={styles.sectionHeader}>Adres odbioru</h3>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="street" className={styles.labelText}>Ulica</label>
+                                    <Field id="street" type="text" name="street" className={styles.textField} />
+                                </div>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="city" className={styles.labelText}>Miasto</label>
+                                    <Field id="city" type="text" name="city" className={styles.textField} />
+                                </div>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="zipcode" className={styles.labelText}>Kod pocztowy</label>
+                                    <Field id="zipcode" type="text" name="zipcode" className={styles.textField} />
+                                </div>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="phone" className={styles.labelText}>Numer telefonu</label>
+                                    <Field id="phone" type="text" name="phone" className={styles.textField} />
+                                </div>
                             </div>
                             <div>
-                                <label htmlFor="city" className={styles.selectLabel}>Miasto</label>
-                                <Field id="city" type="text" name="city" className={styles.textField} />
-                            </div>
-                            <div>
-                                <label htmlFor="zipcode" className={styles.selectLabel}>Kod pocztowy</label>
-                                <Field id="zipcode" type="text" name="zipcode" className={styles.textField} />
-                            </div>
-                            <div>
-                                <label htmlFor="phone" className={styles.selectLabel}>Numer telefonu</label>
-                                <Field id="phone" type="text" name="phone" className={styles.textField} />
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className={styles.sectionHeader}>Termin odbioru</h3>
-                            <div>
-                                <label htmlFor="date" className={styles.selectLabel}>Data</label>
-                                <Field id="date" type="text" name="date" className={styles.textField} />
-                            </div>
-                            <div>
-                                <label htmlFor="time" className={styles.selectLabel}>Godzina</label>
-                                <Field id="time" type="text" name="time" className={styles.textField} />
-                            </div>
-                            <div>
-                                <label htmlFor="remarks" className={styles.selectLabel}>Uwagi do kuriera</label>
-                                <textarea id="remarks" type="text" name="remarks" className={styles.textField} />
+                                <h3 className={styles.sectionHeader}>Termin odbioru</h3>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="date" className={styles.labelText}>Data</label>
+                                    <Field id="date" type="text" name="date" className={styles.textField} />
+                                </div>
+                                <div className={styles.inputsContainer}>
+                                    <label htmlFor="time" className={styles.labelText}>Godzina</label>
+                                    <Field id="time" type="text" name="time" className={styles.textField} />
+                                </div>
+                                <div className={styles.textFieldContainer}>
+                                    <label htmlFor="remarks" className={styles.labelText}>Uwagi do kuriera</label>
+                                    <textarea id="remarks" type="text" name="remarks" className={styles.textField} rows={4} />
+                                </div>
                             </div>
                         </div>
                         <button className={styles.button} type="submit" disabled={isSubmitting}>Dalej</button>

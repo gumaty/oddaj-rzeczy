@@ -9,12 +9,12 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main className={styles.main}>
-        <Hero id="start"/>
+        <Hero />
         <InfoContainer />
-        <SimpleSteps id="happen"/>
-        <About id="about"/>
-        <Helps id="orgs" type={'funds'}/>
-        <Contact id="contact" />
+        <SimpleSteps />
+        <About />
+        <Helps type={'funds'}/>
+        <Contact />
     </main>
   )
 }
