@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 100%;
     gap: 30px;
 }
@@ -14,4 +15,12 @@
     padding: 9px 10px;
     font-size: 14px;
     border: 1px solid #FAD648;
+}
+
+.btn {
+    padding: 9px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }

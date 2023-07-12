@@ -7,6 +7,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from "@/lib/db";
 import {useState} from "react";
 import {useRouter} from "next/navigation";
+import { useDispatch } from "react-redux";
+import { login } from "../../features/user";
 
 
 function Page() {
@@ -17,6 +19,8 @@ function Page() {
 
     const router = useRouter();
 
+    const dispatch = useDispatch();
+
     const handleSubmit = (event) => {
         event.preventDefault();
 
@@ -25,6 +29,7 @@ function Page() {
                 // Signed in
                 const user = userCredential.user;
                 console.log(user.email);
+                dispatch(login(user.email))
                 router.push('/');
             })
             .catch((error) => {

@@ -20,7 +20,7 @@ function InfoContainer() {
         {
             id: 3,
             quantity: 7,
-            text: "ZORGANIZOWANY ZBIÓREK",
+            text: "ZORGANIZOWANYCH ZBIÓREK",
             description: "Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat."
 
         }
