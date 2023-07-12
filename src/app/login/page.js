@@ -24,7 +24,7 @@ function Page() {
             .then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-                console.log(user);
+                console.log(user.email);
                 router.push('/');
             })
             .catch((error) => {

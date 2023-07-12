@@ -28,6 +28,7 @@
 }
 
 .labelText {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -52,6 +53,7 @@
 }
 
 .input {
+    opacity: 0;
     height: 40px;
     width: 40px;
     background-color: #FAD648;
@@ -60,4 +62,30 @@
 
 .input:checked {
     appearance: none;
+}
+
+.span {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100;
+    height: 40px;
+    width: 40px;
+    background-color: #ececea;
+    border-radius: 0;
+    border: 1px solid #3C3C3C;
+}
+
+.labelText input[type="radio"] + span {
+    height: 40px;
+    width: 40px;
+    background-color: #ececea;
+    border: 1px solid #3C3C3C;
+}
+
+.labelText input[type="radio"]:checked + span {
+    height: 40px;
+    width: 40px;
+    background-color: #FAD648;
+    border: 1px solid #3C3C3C;
 }

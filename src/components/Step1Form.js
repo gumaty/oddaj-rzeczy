@@ -22,26 +22,31 @@ function Step1Form() {
             >
                 {({ values }) => (
                     <Form  className={styles.formContainer} >
-                        <div className={styles.inputsContainer} role="group" aria-labelledby="checkbox-group">
+                        <div className={styles.inputsContainer} role="group" aria-labelledby="radio-group">
                             <label className={styles.labelText}>
-                                <Field className={styles.input} type="checkbox" name="checked" value="cloths" />
+                                <Field className={styles.input} type="radio" name="checked" value="cloths" />
                                 ubrania, które nadają się do ponownego użycia
+                                <span className={styles.span} ></span>
                             </label>
                             <label className={styles.labelText}>
-                                <Field className={styles.input}  type="checkbox" name="checked" value="trashCloths" />
+                                <Field className={styles.input}  type="radio" name="checked" value="trashCloths" />
                                 ubrania, do wyrzucenia
+                                <span className={styles.span} ></span>
                             </label>
                             <label className={styles.labelText}>
-                                <Field className={styles.input}  type="checkbox" name="checked" value="toys" />
+                                <Field className={styles.input}  type="radio" name="checked" value="toys" />
                                 zabawki
+                                <span className={styles.span} ></span>
                             </label>
                             <label className={styles.labelText}>
-                                <Field className={styles.input}  type="checkbox" name="checked" value="books" />
+                                <Field className={styles.input}  type="radio" name="checked" value="books" />
                                 książki
+                                <span className={styles.span} ></span>
                             </label>
                             <label className={styles.labelText}>
-                                <Field className={styles.input}  type="checkbox" name="checked" value="other" />
+                                <Field className={styles.input}  type="radio" name="checked" value="other" />
                                 Inne
+                                <span className={styles.span} ></span>
                             </label>
                         </div>
 
