@@ -14,10 +14,10 @@ const store = configureStore( {
   },
 })
 
-export const metadata = {
-  title: 'Oddaj rzeczy',
-  description: 'Strona dla chętnych aby oddać rzeczy w dobre ręce',
-}
+// export const metadata = {
+//   title: 'Oddaj rzeczy',
+//   description: 'Strona dla chętnych aby oddać rzeczy w dobre ręce',
+// }
 
 export default function RootLayout({ children }) {
   return (
