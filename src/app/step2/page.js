@@ -7,14 +7,23 @@ import Contact from "@/components/Contact";
 import Step2Container from "@/components/Step2Container";
 import {useRouter} from "next/navigation";
 import { useSelector } from "react-redux";
+import {useEffect, useState} from "react";
 
 export default function Home() {
     const router = useRouter();
     const user = useSelector((state) => state.user.email);
 
-    if (user === "") {
-        router.push('/login');
-    } else {
+    const [email, setEmail] = useState('');
+
+    useEffect(() => {
+        if (user) {
+            setEmail(user)
+        } else {
+            router.push('/login');
+        }
+    })
+
+    if (email) {
         return (
             <main className={styles.main}>
                 <HeroSteps id="start"/>
